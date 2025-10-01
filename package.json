@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest",
     "prepare": "husky",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
   },
   "author": "Przeprogramowani",
   "license": "ISC",

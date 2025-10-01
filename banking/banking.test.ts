@@ -1,6 +1,6 @@
-import {describe, it, expect} from "vitest";
-import {createAccount, processWithdrawal} from "./banking";
-import {BankAccount, WithdrawalRequest} from "./types";
+import { describe, it, expect } from "vitest";
+import { createAccount, processWithdrawal } from "./banking";
+import { BankAccount, WithdrawalRequest } from "./types";
 
 describe("Banking Operations", () => {
   describe("Account Creation", () => {
@@ -34,10 +34,7 @@ describe("Banking Operations", () => {
 
       const result = createAccount(account);
       expect(result).toHaveProperty("code", "INVALID_AMOUNT");
-      expect(result).toHaveProperty(
-        "message",
-        "Account balance cannot be negative"
-      );
+      expect(result).toHaveProperty("message", "Account balance cannot be negative");
     });
 
     it("should reject account creation with zero balance", () => {
@@ -54,10 +51,7 @@ describe("Banking Operations", () => {
 
       const result = createAccount(account);
       expect(result).toHaveProperty("code", "INVALID_AMOUNT");
-      expect(result).toHaveProperty(
-        "message",
-        "Initial account balance must be positive"
-      );
+      expect(result).toHaveProperty("message", "Initial account balance must be positive");
     });
   });
 

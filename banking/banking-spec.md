@@ -3,13 +3,11 @@
 ## Podstawowe Reguły Biznesowe
 
 1. Tworzenie Konta
-
    - Mając nowe żądanie utworzenia konta
    - Podczas tworzenia konta bankowego
    - System powinien utworzyć konto z unikalnym ID, prawidłową walutą oraz danymi właściciela (imię, nazwisko, id)
 
 2. Walidacja Wypłaty
-
    - Mając żądanie wypłaty
    - Podczas próby wypłaty środków
    - Kwota musi być:
@@ -18,7 +16,6 @@
      - W tej samej walucie co konto
 
 3. Obsługa Nieudanych Wypłat
-
    - Mając nieprawidłowe żądanie wypłaty
    - Gdy walidacja nie powiedzie się
    - System powinien zwrócić WithdrawalError z odpowiednim kodem:
@@ -27,7 +24,6 @@
      - "ACCOUNT_NOT_FOUND" gdy accountId jest nieprawidłowy
 
 4. Przetwarzanie Udanej Wypłaty
-
    - Mając prawidłowe żądanie wypłaty
    - Podczas przetwarzania wypłaty
    - System powinien:
