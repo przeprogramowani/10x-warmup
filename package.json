@@ -4,13 +4,22 @@
   "description": "Warmup repository for 10xDevs.pl program.",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky",
+    "format:check": "prettier --check ."
   },
   "author": "Przeprogramowani",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
     "@types/node": "22.13.11",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "prettier": "^3.6.2",
     "typescript": "5.8.2",
+    "typescript-eslint": "^8.45.0",
     "vitest": "3.0.9"
   }
 }
